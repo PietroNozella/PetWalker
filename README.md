@@ -209,6 +209,61 @@ petwalker/
 
 ---
 
+## 📱 App Mobile (iOS & Android)
+
+O PetWalker também possui uma versão mobile desenvolvida com **React Native + Expo**, funcionando tanto em iOS quanto Android!
+
+### Estrutura Mobile
+```
+mobile/
+├── App.js                    # Entrada principal
+├── src/
+│   ├── config/              # Configurações (API, tema)
+│   ├── contexts/            # Context API (Auth)
+│   └── screens/             # Telas do app
+│       ├── LoginScreen.js
+│       ├── DashboardScreen.js
+│       ├── DogsScreen.js
+│       ├── WalksScreen.js
+│       ├── TrainingsScreen.js
+│       ├── AddDogScreen.js
+│       ├── AddWalkScreen.js
+│       ├── AddTrainingScreen.js
+│       └── DogDetailScreen.js
+└── package.json
+```
+
+### Instalação do App Mobile
+
+```bash
+# 1. Acesse a pasta mobile
+cd mobile
+
+# 2. Instale as dependências
+npm install
+
+# 3. Configure o IP do backend
+# Edite src/config/api.js e altere API_URL para o IP da sua máquina
+# Exemplo: const API_URL = 'http://192.168.1.100:8000';
+
+# 4. Inicie o Expo
+npm start
+
+# 5. Escaneie o QR Code com o app Expo Go (disponível na App Store e Play Store)
+```
+
+### Funcionalidades Mobile
+- ✅ Login com autenticação JWT
+- ✅ Dashboard com estatísticas
+- ✅ Gerenciamento de cães
+- ✅ Agendamento de passeios
+- ✅ Agendamento de adestramento
+- ✅ Upload de fotos da galeria
+- ✅ Compartilhamento de perfil do pet
+- ✅ Design moderno e responsivo
+
+---
+
 ## 📄 Licença
 
 Este projeto é livre para uso educacional e pessoal.
